@@ -10,18 +10,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
     <link href="./assets/style/style.css" rel="stylesheet" >
+    <link href="./assets/style/index.css" rel="stylesheet" >
 </head>
 <body>
     <header class="d-flex flex-row" >
         <div class="col-md-2" >
-            <img class="logo" src="./assets/imagens/logo.png" alt="">
+            <img id="logo" src="./assets/imagens/logo.png" alt="">
         </div>
-        <div class="d-flex justify-content-around col-md-10" >
+        <div class="d-flex justify-content-between col-md-10" >
             <div class="col-md-4 d-flex align-items-center " >
                 <h2>Cadastre-se</h2>
             </div>
-            <div class="col-md-4"  >
-                <img src="" alt="">
+            <div class="d-flex flex-column justify-content-center  col-md-4"  >
+                <img id="menu-categoria" src="./assets/imagens/categorias.png"  alt="">
                 <h2>Categorias</h2>
             </div>
             <div class="col-md-4 d-flex  align-items-center"  >
@@ -29,7 +30,7 @@
                     <h2>Cadastre a sua loja</h2>
                     <div class="d-flex flex-row align-items-center " >
     
-                        <img src="" alt="" style="width: 20px; height: 20px;" >
+                        <img id="caminhao-img" src="./assets/imagens/truck.png" alt="">
                         <h2>Seja um motorista</h2>
                     </div>
 
@@ -38,9 +39,46 @@
         </div>
         
     </header>
-    <div>
+    <main class="d-flex flex-row justify-content-around" >
+        <section id="main-login" class="d-flex flex-column col-md-3 " >
+            <h1>Insira o seu e-mail.</h1>
+            <p></p>
+            
+            <form action="" class="d-flex flex-column " >
+                <div class="form-group" >
+                    <label for="usuario">Usuário email</label>
+                    <input type="text" name="usuario" class="form-control" >
 
-    </div>
-    
+                </div>
+                <div class="form-group" >
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="" class="form-control">
+                </div>
+
+                <button type="submit" class="btn btn-primary" >Login</button>
+            </form>
+        </section>
+        <section id="main-prdutos" class="d-flex flex-column col-md-4 " >
+            <div class="d-flex flex-row" >
+                <div class="container" >
+                    <img src="./assets/imagens/nike-infinit-run-verde.jpg" class=" main-img img-fluid" alt="">
+                </div>
+                <div class="container" >
+                    <img src="./assets/imagens/casal-nike.jpg" class=" main-img img-fluid" alt="">
+                </div>
+            </div>
+            <div class="d-flex flex-column justify-content-center " >
+                <p>
+                    Nike InfinityRUN 4
+                </p>
+                <h1>DÊ UM ABRAÇO NOS SEUS PÉ</h1>
+                <p>A combinação da nova espuma ReactX, um Flyknit elástico entressola mais larga traz uma sensação de conforto e ajuste duradouro.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
