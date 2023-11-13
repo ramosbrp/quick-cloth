@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+*{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 2;
+}
+.header{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(248, 246, 246);
+}
+#img{
+    position: relative;
+    max-height: 100%;
+    width: 80px;
+    height: 90px;
+    left: 1%;
+    
+}
+#pesquisa{
+    width: 52%;
+    border-style:groove; 
+    border-radius: 5px;
+    font-size: large;
+    font-family:'Arial Narrow';
+    box-sizing: border-box;
+    position: relative;
+    left: 6.9%;
+}
+.login{
+    position: relative;
+    left: 3%;
+}
+#entrar{
+    position: relative;
+    left: 5%;
+    text-decoration: none;
+    border: none;
+    background-color: rgb(248, 246, 246);
+    color: black;
+}
+#cadastrar{
+    text-decoration: none;
+    border: none;
+    background-color: rgb(248, 246, 246);
+    color: black;
+}
+#carrinho{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    right: 8%;
+}
+.header02{
+    background-color: rgb(248, 246, 246);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+#lista{
+    border: none;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(248, 246, 246);
+    font-weight: bold;
+}
+
+#ofertas{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    background-color: rgb(248, 246, 246);
+}
+
+#h1{
+    background-color: aqua;
+    text-align: center;
+    position: relative;
+}
+#h102{
+    background-color: aqua;
+    text-align: center;
+    position: relative;
+    top: 2pc;
+}
+#h3{
+    text-align: center;
+}
+#feminino{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    position: relative;
+    top: 2pc;
+    width: 100%;
+    
+    background-color: rgb(248, 246, 246);
+    border-style:groove ;
+}
+
+#calcapantalona{
+    border-style:solid;
+    border-color: rgb(226, 224, 224);
+    width: 140px;
+    height: 250px;
+}
+#calcawideleg{
+    border-style:solid;
+    border-color: rgb(226, 224, 224);
+    width: 135px;
+    height: 250px;;
+}
+#kitacademia{
+    border-style:solid;
+    border-color: rgb(226, 224, 224);
+    width: 135px;
+    height: 250px;
+}
+#shortjeans{
+    border-style:solid;
+    border-color: rgb(226, 224, 224);;
+    width: 140px;
+    height: 250px;
+}
+#masculino{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    position: relative;
+    top:2pc;
+    width: 100%;
+    background-color: rgb(248, 246, 246);
+    border-style:groove ;
+}
+#calcamoleton{
+    border-style:solid;
+    border-color: rgb(226, 224, 224);
+    width: 130px;
+    height: 279px;
+    margin: 1px;
+}
+
+
+#bermudaadidas{
+    border-style:solid;
+    border-color: rgb(226, 224, 224);
+    width: 140px;
+    height: 279px;
+}
+#shortneon{
+    border-style:solid;
+    border-color: rgb(226, 224, 224);
+    width: 140px;
+    height: 279px;
+}
+#casacom{
+    border-style:solid;
+    border-color: rgb(226, 224, 224);
+    width: 140px;
+    height: 279px;
+}
+#calcados{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    position: relative;
+    top: 2pc;
+    width: 100%;
+    background-color: rgb(248, 246, 246);
+    border-style:groove ;   
+}
+#kener{
+    border-style:solid;
+    border-color: rgb(226, 224, 224);
+    width: 130px;
+    height: 275px;
+    margin: 1px;
+}
+#tenisadidas{
+    border-style:solid;
+    border-color: rgb(226, 224, 224);
+    width: 140px;
+    height: 275px;
+}
+#tenisacademia{
+    border-style:solid;
+    border-color: rgb(226, 224, 224);
+    width: 140px;
+    height: 275px;
+}
+#slider{
+    border-style:solid;
+    border-color: rgb(226, 224, 224);
+    width: 140px;
+    height: 275px;
+}
+#informacoes{
+    background-color: darkgrey;
+    position: relative;
+    top: 3pc;
+    padding: 2px;
+}
+#informacoes02{
+    position: relative;
+    left: 60%;
+    bottom: 88px;
+}
