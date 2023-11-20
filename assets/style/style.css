@@ -27,6 +27,12 @@ html{
     /* font-size: 62.5%; 10px */
 }
 
+#logo{
+    width: 200px;
+    height: 200px;
+}
+
+
 body{
     /* display: flex; */
     height: 100vh; /* view height */
