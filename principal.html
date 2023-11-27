@@ -4,32 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style/principal.css">
-    <link rel="stylesheet" href="./assets/style/style.css">
+    
     <title>QUICK CLOTH</title>
 </head>
 <body>
     <div class="header">
-        <img src="./imagens/logo (1).png" id="img">
-
+        <img src="./logo (1).png" id="img">
         <input type="text" placeholder="Oque está procurando?" id="pesquisa">
 
             <div class="login">
                 <button id="entrar">
-                    <a href="#" id="entrar">Entrar</a>
+                    <a href="http://127.0.0.1:5500/quick-cloth/index.html" id="entrar">Entrar</a>
                 </button>
                 <button id="cadastrar">
-                    <a href="#" id="cadastrar">Cadastrar</a> 
+                    <a href="http://127.0.0.1:5500/quick-cloth/pages/cadastro.html" id="cadastrar">Cadastrar</a> 
                 </button>
             </div>
         
-        <a href="">
-            <img src="./imagens/carrinhooo.jpg" id="carrinho">
-        </a>
+            <nav
+            onclick="abrirCarrinho()"><img src="./carrinhooo.jpg" id="carrinho">
+        </nav>
     </div>        
     <div class="header02">
         <div id="lista">
             <button id="lista">
-                <a href="#" id="lista">HOMEM</a>
+                <a href="http://127.0.0.1:5500/quick-cloth/roupam.html" id="lista">HOMEM</a>
             </button>
 
             <button id="lista">
@@ -53,103 +52,136 @@
             </button>
         </div>
     </div>
-<br><br><br>
+
+    <header>
+        <h1>Destaques</h1>   
+    </header>
+
+    <section class="featured-products">
+        <article class="product">
+            <img src=".//imagens/calcapantalona01.jpg" alt="Camiseta">
+            <h2><small>Calça Pantalona</small></h2>
+            <p>R$ 69,99</p>
+            <button onclick="adicionarAoCarrinho('Bermuda Nike', 69.99)">Adicionar ao Carrinho</button>
+        </article>
+
+        <article class="product">
+            <img src="./masculino/bermudanike04.jpg" alt="Calça Jeans" >
+            <h2><small>Bermuda Nike</small></h2>
+            <p>R$ 89,99</p>
+            <button onclick="adicionarAoCarrinho('Bermuda Nike', 89.99)">Adicionar ao Carrinho</button>
+        </article>
+
+        <article class="product">
+            <img src=".//imagens/kitacademina.jpg" alt="Calça Jeans" >
+            <h2><small>Kit Academia</small></h2>
+            <p>R$ 87,99</p>
+            <button onclick="adicionarAoCarrinho('Bermuda Nike', 87.99)">Adicionar ao Carrinho</button>
+        </article>
+
+        <article class="product">
+            <img src=".//masculino/bermudaJeans02.jpg" alt="Calça Jeans">
+            <h2><small>Bermuda Jeans</small></h2>
+            <p>R$ 49,99</p>
+            <button onclick="adicionarAoCarrinho('Bermuda Jeans', 49.99)">Adicionar ao Carrinho</button>
+        </article>
+
+
+    </section>
+
+    <section class="featured-products">
+        <article class="product">
+            <img src=".///masculino/thugNine.jpeg" alt="Camiseta">
+            <h2><small>Camisa ThugNine</small></h2>
+            <p>R$ 109,99</p>
+            <button onclick="adicionarAoCarrinho('Camisa ThugNine', 109.99)">Adicionar ao Carrinho</button>
+        </article>
+
+        <article class="product">
+            <img src="./imagens/shortjeans.jpg" alt="Calça Jeans" >
+            <h2><small>Kit 3 short jeans</small></h2>
+            <p>R$ 119,99</p>
+            <button onclick="adicionarAoCarrinho('Camisa High', 119.99)">Adicionar ao Carrinho</button>
+        </article>
+
+        <article class="product">
+            <img src="./masculino/camisa05.jpeg" alt=" Calça Jeans" >
+            <h2><small>Camisa High</small></h2>
+            <p>R$ 59,99</p>
+            <button onclick="adicionarAoCarrinho('Camisa High', 59.99)">Adicionar ao Carrinho</button>
+        </article>
+
+        <article class="product">
+            <img src="./imagens/roupareveillon.jpeg" alt="Calça Jeans">
+            <h2><small>Vestido</small></h2>
+            <p>R$ 79,99</p>
+            <button onclick="adicionarAoCarrinho('Camisa Nike', 79.99)">Adicionar ao Carrinho</button>
+        </article>
+
+    </section>
+
+    <div id="telaCarrinho">
+        <span id="fecharCarrinho" onclick="fecharCarrinho()">X</span>
+        <h2>Carrinho</h2>
+        <div id="carrinhoLista"></div>
+        <p>Total: R$ <span id="totalCarrinho">0.00</span></p>
+        <button id="finalizarCompra" onclick="finalizarCompra()">Comprar</button>
+      </div>
     
-    <h1 id="h1">Lançamento</h1> 
-    <h3 id="h3">Venha fazer parte dessa Coleção incrivel</h3>
-    <div id="tenisnike">
-        
-        <a href="https://www.nike.com.br/hotsite/kipchoge-pack">
-        <img src="./imagens/teniscorrida.jpg" alt="">
-        </a>
 
-    </div>
-
-    <h1 id="h102">Feminino</h1>
-
-    <div id="feminino">
-        <a href="#">
-            <img src="./imagens/calcapantalona03.jpg" id="calcapantalona" alt="Calça Pantalona">
-        </a>
-
-        <a href="#">
-            <img src="./imagens/calcawideleg.jpg" id="calcawideleg" alt="calça Wide leg">
-        </a>
-
-        <a href="#">
-            <img src="./imagens/kitacademina.jpg" id="kitacademia" alt="kit academina">
-        </a>
-
-        <a href="#">
-            <img src="./imagens/shortjeans.jpg" id="shortjeans" alt="shortjeans">
-        </a>
-    </div>
-
-    <h1 id="h102">Masculino</h1>
-
-    <div id="masculino">
-        <a href="#">
-            <img src="./imagens/calcamoleton.jpg" id="calcamoleton">
-        </a>
-
-        <a href="#">
-            <img src="./imagens/barmudaadidas.jpg" id="bermudaadidas">
-        </a>
-
-        <a href="#">
-            <img src="./imagens/shortneon.jpg" id="shortneon">
-        </a>
-
-        <a href="#">
-            <img src="./imagens/casacom.jpg" id="casacom">
-        </a>
-    </div>
-
-    <h1 id="h102">Calçados</h1>
-
-    <div id="calcados">
-        <a href="#">
-            <img src="./imagens/kenerM.jpg" id="kener">
-        </a>
-
-        <a href="#">
-            <img src="./imagens/tenisadidasF.jpg" id="tenisadidas">
-        </a>
-
-        <a href="#">
-            <img src="./imagens/tenisacademia.jpg" id="tenisacademia">
-        </a>
-        
-        <a href="#">
-            <img src="./imagens/slider.jpg" id="slider">
-        </a>
-    </div>
-
-    <div id="informacoes">
+    <script>
+        let carrinho = [];
+        let totalCarrinho = 0;
+    
+        function adicionarAoCarrinho(nomeProduto, precoProduto) {
+          carrinho.push({ nome: nomeProduto, preco: precoProduto });
+          totalCarrinho += precoProduto;
+    
+          atualizarCarrinho();
+        }
+    
+        function atualizarCarrinho() {
+          const carrinhoLista = document.getElementById('carrinhoLista');
+          const totalCarrinhoElement = document.getElementById('totalCarrinho');
+    
+          carrinhoLista.innerHTML = '';
+          carrinho.forEach(item => {
+            const itemCarrinho = document.createElement('div');
+            itemCarrinho.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)}`;
+            carrinhoLista.appendChild(itemCarrinho);
+          });
+    
+          totalCarrinhoElement.textContent = totalCarrinho.toFixed(2);
+        }
+    
+        function abrirCarrinho() {
+          atualizarCarrinho();
+          document.getElementById('telaCarrinho').style.display = 'flex';
+        }
+    
+        function fecharCarrinho() {
+          document.getElementById('telaCarrinho').style.display = 'none';
+        }
+    
+        function finalizarCompra() {
+          alert('Compra finalizada! Obrigado por comprar conosco.');
+          carrinho = [];
+          totalCarrinho = 0;
+          atualizarCarrinho();
+          fecharCarrinho();
+        }
+      </script>
+    <footer>
         <ul> 
-            <a href="#"><li>Contato: 0800 765 807</li></a>
-            <a href="#"><li>Instagram: quickclothe021</li></a> 
-            <a href="#"><li>Gmail: quickclothe021@gmail.com</li> </a>
-            <a href="#"><li>Gmail: Polotica de privacidade</li> </a>
+            <li>Contato: 0800 765 807</li>
+            <li>Instagram: quickclothe021</li> 
+            <li>Gmail: quickclothe021@gmail.com</li> 
+            <li>Polotica de privacidade</li> 
+            <li>Devolução</li>
+            <li>Sobre Quick Clothe</li>
+            <li>Seja um motorista</li>
+            <li>Venda na Quick Clothe</li>
         </ul>
-
-        <div id="informacoes02">
-            <ul>
-                <a href="#">
-                    <li>Devolução</li>
-                </a>
-                <a href="#">
-                    <li>Sobre Quick Clothe</li>
-                </a>
-                <a href="#">
-                    <li>Seja um motorista</li>
-                </a>
-                <a href="#">
-                    <li>Venda na Quick Clothe</li>
-                </a>
-                
-            </ul>
-        </div>
-    </div>
+    </footer>
 </body>
 </html>
