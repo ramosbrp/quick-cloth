@@ -16,18 +16,18 @@
     <link href="../assets/style/style.css" rel="stylesheet">
     <link href="../assets/style/cadastro.css" rel="stylesheet">
 
-    <script src="../js/cadastro.js" type="text/javascript" ></script>
-</head>
 
 </head>
 
-<body  >
+</head>
+
+<body>
     <header class="d-flex flex-row">
         <div class="col-md-2">
             <img id="logo" src="../imagens/logo.png" alt="">
         </div>
     </header>
-    <main class="container" >
+    <main class="container">
         <form action="" class="d-flex flex-column ">
             <div class="row">
                 <div class="col">
@@ -52,7 +52,7 @@
 
             <div class="form-group col-5">
                 <label for="cep">CEP</label>
-                <input type="number" class="form-control" name="cep" id="cep" placeholder="CEP" onblur="init()" >
+                <input type="number" class="form-control" name="cep" id="cep" placeholder="CEP">
             </div>
 
             <div class="row">
@@ -71,7 +71,7 @@
                 <div class="col-2">
                     <label for="uf">UF</label>
                     <select class="form-control" name="uf" id="">
-                        <option value="" id="uf" >RJ</option>
+                        <option value="" id="uf">RJ</option>
                     </select>
                 </div>
 
@@ -80,10 +80,6 @@
                     <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Cidade">
                 </div>
 
-                <div class="col-2">
-                    <label for="pais">País</label>
-                    <input type="text" class="form-control" name="pais" id="pais" placeholder="País">
-                </div>
             </div>
 
             <div class="form-group col-2">
@@ -100,7 +96,7 @@
 
                 <div class="custom-control">
                     <input type="checkbox" class="custom-control-input" name="termos">
-                    <label for="termos"  class="custom-control-label">Termos de Uso</label>
+                    <label for="termos" class="custom-control-label">Termos de Uso</label>
                 </div>
             </div>
 
@@ -110,5 +106,6 @@
         </form>
     </main>
 </body>
+<script src="../js/cadastro.js" type="text/javascript"></script>
 
 </html>
